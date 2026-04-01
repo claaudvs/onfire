@@ -1,0 +1,25 @@
+directories:
+  output: dist-package
+  buildResources: build
+appId: com.onfire.app
+productName: On Fire
+asar: false
+npmRebuild: true
+files:
+  - filter:
+      - dist/**/*
+      - src/renderer/index.html
+      - src/renderer/styles.css
+      - assets/**/*
+win:
+  target: nsis
+  icon: assets/tray-active.ico
+nsis:
+  installerIcon: assets/tray-active.ico
+  uninstallerIcon: assets/tray-inactive.ico
+  shortcutName: On Fire
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+electronVersion: 28.3.3

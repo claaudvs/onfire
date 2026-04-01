@@ -5,7 +5,7 @@ import { updateMouseActivity } from './mouse';
 import * as fs from 'fs';
 import * as path from 'path';
 
-const logDir = path.join(process.cwd(), 'logs');
+const logDir = path.join(app.getPath('userData'), 'logs');
 if (!fs.existsSync(logDir)) fs.mkdirSync(logDir, { recursive: true });
 
 function log(msg: string): void {

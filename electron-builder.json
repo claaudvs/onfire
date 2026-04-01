@@ -1,6 +1,8 @@
 {
   "appId": "com.onfire.app",
   "productName": "On Fire",
+  "asar": false,
+  "npmRebuild": true,
   "directories": {
     "output": "dist-package"
   },
@@ -8,8 +10,7 @@
     "dist/**/*",
     "src/renderer/index.html",
     "src/renderer/styles.css",
-    "assets/**/*",
-    "node_modules/**/*"
+    "assets/**/*"
   ],
   "win": {
     "target": "nsis",
@@ -18,6 +19,10 @@
   "nsis": {
     "installerIcon": "assets/tray-active.ico",
     "uninstallerIcon": "assets/tray-inactive.ico",
-    "shortcutName": "On Fire"
+    "shortcutName": "On Fire",
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true
   }
 }

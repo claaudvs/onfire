@@ -8,7 +8,7 @@
     "start": "electron .",
     "build": "npm run build:css && tsc",
     "build:css": "npx tailwindcss -i ./src/renderer/input.css -o ./src/renderer/styles.css",
-    "package": "electron-builder",
+    "package": "npm run build && electron-builder",
     "convert-icons": "node scripts/convert-icons.js"
   },
   "devDependencies": {

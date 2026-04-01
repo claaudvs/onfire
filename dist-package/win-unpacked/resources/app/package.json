@@ -1,0 +1,10 @@
+{
+  "name": "on-fire",
+  "version": "1.0.0",
+  "description": "Prevent sleep tray utility for Windows",
+  "main": "dist/main/main.js",
+  "dependencies": {
+    "electron-store": "^8.2.0",
+    "robotjs": "^0.6.0"
+  }
+}

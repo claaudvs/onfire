@@ -1,4 +1,4 @@
-import { BrowserWindow } from 'electron';
+import { app, BrowserWindow } from 'electron';
 import path from 'path';
 
 let win: BrowserWindow | null = null;
@@ -17,11 +17,11 @@ export function createWindow(): BrowserWindow {
       contextIsolation: true,
       nodeIntegration: false,
     },
-    icon: path.join(process.cwd(), 'assets', 'tray-active.ico'),
+    icon: path.join(app.getAppPath(), 'assets', 'tray-active.ico'),
   });
 
   // HTML/CSS live in src/renderer; only .ts files go to dist
-  win.loadFile(path.join(process.cwd(), 'src', 'renderer', 'index.html'));
+  win.loadFile(path.join(app.getAppPath(), 'src', 'renderer', 'index.html'));
 
   win.on('close', (event) => {
     event.preventDefault();

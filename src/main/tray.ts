@@ -9,7 +9,7 @@ let tray: Tray | null = null;
 let onFireEnabled = false;
 
 function getIconPath(active: boolean): string {
-  return path.join(process.cwd(), 'assets', active ? 'tray-active.ico' : 'tray-inactive.ico');
+  return path.join(app.getAppPath(), 'assets', active ? 'tray-active.ico' : 'tray-inactive.ico');
 }
 
 function broadcastState(): void {
