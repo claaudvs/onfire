@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <title>On Fire</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="brand">
+        <span class="brand-icon" id="brand-emoji">❄️</span>
+        <h1 class="brand-name">On Fire</h1>
+      </div>
+      <span class="badge" id="badge">Inactive</span>
+    </header>
+
+    <!-- Main card -->
+    <main class="main-card" id="main-card">
+      <p class="card-eyebrow">Sleep Prevention Mode</p>
+
+      <div class="state-indicator">
+        <span class="state-ring" id="state-ring"></span>
+        <span class="state-text" id="state-text">OFF</span>
+      </div>
+
+      <button class="toggle-btn" id="toggle-btn">Enable On Fire</button>
+
+      <div class="status-row">
+        <span class="status-dot" id="status-dot"></span>
+        <span class="status-label" id="status-text">System running normally</span>
+      </div>
+    </main>
+
+    <!-- Stats grid -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon-wrap">🖱</div>
+        <div>
+          <p class="stat-name">Mouse Jiggle</p>
+          <p class="stat-val" id="mouse-stat">Inactive</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon-wrap">⚡</div>
+        <div>
+          <p class="stat-name">Power Block</p>
+          <p class="stat-val" id="power-stat">Inactive</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer shortcut hint -->
+    <footer class="footer">
+      <kbd class="kbd">Ctrl</kbd>
+      <span>+</span>
+      <kbd class="kbd">Shift</kbd>
+      <span>+</span>
+      <kbd class="kbd">F</kbd>
+      <span class="footer-text">to toggle</span>
+    </footer>
+
+  </div>
+
+  <script src="../../dist/renderer/renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "appId": "com.onfire.app",
+  "productName": "On Fire",
+  "directories": {
+    "output": "dist-package"
+  },
+  "files": [
+    "dist/**/*",
+    "src/renderer/index.html",
+    "src/renderer/styles.css",
+    "assets/**/*",
+    "node_modules/**/*"
+  ],
+  "win": {
+    "target": "nsis",
+    "icon": "assets/tray-active.ico"
+  },
+  "nsis": {
+    "installerIcon": "assets/tray-active.ico",
+    "uninstallerIcon": "assets/tray-inactive.ico",
+    "shortcutName": "On Fire"
+  }
+}
