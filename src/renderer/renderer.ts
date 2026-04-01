@@ -19,7 +19,7 @@ function updateUI(onFireEnabled: boolean): void {
 
   // Brand emoji + window title
   brandEmoji.textContent = onFireEnabled ? '🔥' : '❄️';
-  document.title         = onFireEnabled ? '🔥 On Fire' : '❄️ On Fire';
+  document.title         = onFireEnabled ? 'On Fire' : 'On Fire';
 
   // Dashboard badge
   const badge = document.getElementById('badge');

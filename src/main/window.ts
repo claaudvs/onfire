@@ -9,7 +9,7 @@ export function createWindow(): BrowserWindow {
     height: 500,
     resizable: false,
     show: true,
-    title: '❄️ On Fire',
+    title: 'On Fire',
     // skipTaskbar: true,
     frame: true,
     webPreferences: {
